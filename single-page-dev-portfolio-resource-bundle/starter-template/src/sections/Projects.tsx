@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import WeatherPic from "@/assets/images/Screenshot 2024-07-17 091923.png";
+import CapstonePic from "@/assets/images/Screenshot 2024-04-05 150507.png";
+import EcommercePic from "@/assets/images/Screenshot 2024-09-12 154307.png";
 import Image from "next/image";
 import checkCircle from '@/assets/icons/check-circle.svg'
 import ArrowUpIcon from '@/assets/icons/arrow-up-right.svg'
@@ -8,41 +8,33 @@ import grainImage from '@/assets/images/grain.jpg'
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    company: "LC Studio",
+    year: "2024",
+    title: "Weather website",
+    results: 'This team project was created using Python and the Flask framework.',
+    link: "https://weather-report-ochre.vercel.app/",
+    github: 'https://github.com/GSamuels5/Weather_report.git',
+    image: WeatherPic,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    company: "Life Choices Academy",
+    year: "2024",
+    title: "Employee management system",
+    results: 'My employee management system was created for my final project at Life Choices Academy.',
+    link: "https://capstone-ee11b.web.app/",
+    github: 'https://github.com/GSamuels5/Capstone_project.git',
+    image: CapstonePic,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
-  },
+    company: "Life Choices Academy",
+    year: "2024",
+    title: "E-commerce website ",
+    results: 'My ce-commerce was created using HTML,CSS,Bootstrap and Javascript language.',
+    link: "https://javascript-e-commerce.vercel.app/",
+    github: 'https://github.com/GSamuels5/Javascript_E-commerce.git',
+    image: EcommercePic,
+  },  
+ 
 ];
 
 export const ProjectsSection = () => {
@@ -67,7 +59,7 @@ export const ProjectsSection = () => {
   backgroundImage: `url(${grainImage.src})`
 }}></div>
 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-<div>
+<div className="lg:pb-16">
                 <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex
                font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text ">
                   <span>{project.company}</span>
@@ -77,22 +69,31 @@ export const ProjectsSection = () => {
               
                 <h3 className="font-serif text-2xl mt-2 ">{project.title}</h3>
                 <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
-                <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                  {project.results.map((result, index) => (
-                    <li className="flex gap-2 text-sm md:text-base text-white/50" key={index}>
-                      {result.title}</li>
-                  ))}
-                </ul>
+                <p className="flex flex-col gap-4 mt-4 md:mt-5 mb-2">
+                 
+                    
+                      {project.results}
+    
+                </p>
+                <div className="flex ">
+
                 <a href={project.link}>
                   <button className="bg-white text-gray-950 h-12 w-full rounded-xl md:w-auto md:px-6 md:mx-6 lg:mt-0 font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                    <span>View site</span> 
+                    <span>Visit website</span> 
+                    <ArrowUpIcon classname="size-4"  />
+                    </button>
+                </a>
+                <a href={project.github}>
+                  <button className="bg-white text-gray-950 h-12 w-full rounded-xl md:w-auto md:px-6 md:mx-6 lg:mt-0 font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                    <span>Github link</span> 
                     <ArrowUpIcon classname="size-4"  />
                     </button>
                 </a>
                 </div>
-                <div>
+                </div>
+                <div className="relative">
 
-                <Image src={project.image} alt={project.title}  className="mt-8 -mb-4 md:-mb-0 lg:mt-0 "/>
+                <Image src={project.image} alt={project.title}  className="mt-8 -mb-4  lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"/>
                 </div>
 </div>
               </div>
