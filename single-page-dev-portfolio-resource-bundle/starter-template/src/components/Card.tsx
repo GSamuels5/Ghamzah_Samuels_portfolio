@@ -1,6 +1,7 @@
 import grainImage from '@/assets/images/grain.jpg'
 import { twMerge } from 'tailwind-merge';
-export const Card = ({className,children,}: PropsWithChildren<{className?: string}>) => {
+import { PropsWithChildren } from 'react';
+export const Card = ({className,children}: PropsWithChildren<{className?: string}>) => {
     return (
         <div className={twMerge(
             "bg-gray-800 rounded-3xl relative z-0 overflow-hidden " +
