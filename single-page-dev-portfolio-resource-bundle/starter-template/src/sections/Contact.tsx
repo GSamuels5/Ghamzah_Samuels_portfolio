@@ -18,7 +18,7 @@ export const ContactSection = () => {
           <div>
     <h2 className='font-serif text-2xl md:text-3xl'>Lets collaborate to innovate</h2>
     <p className='text-sm mt-2'> Do you want me to bring your software ideas to life?
-      Let's figure it out together and achieve your goals </p>
+      Let&apos;s figure it out together and achieve your goals </p>
       </div>
       <div>
     <button className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 
