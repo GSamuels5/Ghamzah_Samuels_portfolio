@@ -1,9 +1,10 @@
 import { TechIcon } from "@/components/Techicon";
 import { twMerge } from "tailwind-merge";
+import React from 'react';
 export const ToolboxItems = ({items,className,ItemsWrapperClassName,}:{
     items:{
         title:string;
-        iconType:React.ElementType;
+        iconType: React.ElementType;
     }[];
     className?: string;
     ItemsWrapperClassName?:string;
