@@ -120,7 +120,7 @@ export const AboutSection = () => {
 description="Come and explore my journey"
   />
 <div className="mt-20 flex flex-col gap-8">
-<div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3 ">
+<div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
 <Card className="h-[320px] md:col-span-2 lg:col-span-1"> 
  <CardHeader title="My Reads" description="See the books shaping my perspectives"/>
   <div className="w-40 mx-auto mt-2 md:mt-0">
@@ -134,8 +134,8 @@ description="Explore my software for developing software" className=""/>
  <ToolboxItems items={toolboxItems} className="mt-6" ItemsWrapperClassName="-translate-x-1/2" /> 
  </Card>
  </div>
- <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
-<Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:cols-span-2">
+ <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5e gap-8">
+<Card className="h-[320px] p-0 flex flex-col col-span-3">
 <CardHeader title="Soft Skills and Hobbies" 
 description="Explore my soft skill and hobbies beyond the coding environment"
 className=""
@@ -155,7 +155,7 @@ className=""
     ))}
   </div>
 </Card>
-<Card className="h-[320px]  relative md:col-span-2 lg:col-span-1">
+<Card className="h-[320px]  relative  p-0 col-span-2">
 <Image src={MapImage} alt="map" className="h-full w-full object-cover object-left-top" />
 <div className="absolute  top-1/2 left-1/2
  -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 
