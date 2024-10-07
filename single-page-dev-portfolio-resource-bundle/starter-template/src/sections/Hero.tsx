@@ -16,30 +16,36 @@ export const HeroSection = () => {
   <div className=" hero-ring size-[820px]"></div>
   <div className=" hero-ring size-[1020px]"></div>
   <div className=" hero-ring size-[1220px]"></div>
-  <HeroOrbit size={800} rotation={-72}> 
-  <StarIcon className="size-28 text-emerald-300"/ >
+  <StarIcon className="size-8 text-emerald-300"/>
+  <HeroOrbit size={430} rotation={-14}> 
+  <SparkleIcon className="size-8 text-emerald-300/20"/ >
   </HeroOrbit>
- <HeroOrbit size={550} rotation={45}>
- <StarIcon className="size-12 text-emerald-300"/ >
+  <HeroOrbit size={440} rotation={79}> 
+  <SparkleIcon className="size-5 text-emerald-300/20"/ >
+  </HeroOrbit>
+  <HeroOrbit size={530} rotation={178}> 
+  <SparkleIcon className="size-10 text-emerald-300/20"/ >
+  </HeroOrbit>
+  <HeroOrbit size={710} rotation={144}> 
+  <SparkleIcon className="size-14 text-emerald-300/20"/ >
+  </HeroOrbit>
+ <HeroOrbit size={720} rotation={85}>
+ <div className="size-3 rounded-full text-emerald-300/20  "/ >
  </HeroOrbit>
- <HeroOrbit size={430} rotation={-14}>
- <SparkleIcon className="size-8 text-emerald-300  "/ >
+ <HeroOrbit size={520} rotation={-41}>
+ <div className="size-2 rounded-full text-emerald-300/20  "/ >
  </HeroOrbit>
- <HeroOrbit size={420} rotation={79}>
- <SparkleIcon className="size-8 text-emerald-300  "/ >
+ <HeroOrbit size={650} rotation={178}>
+ <div className="size-2 rounded-full text-emerald-300/20  "/ >
  </HeroOrbit>
- <HeroOrbit size={530} rotation={178}>
- <SparkleIcon className="size-10 text-emerald-300  "/ >
- </HeroOrbit>
- <HeroOrbit size={530} rotation={-50}>
- <div className="size-3 rounded-full bg-emerald-300   "/ >
- </HeroOrbit>
+
  </div>
   <div className="container">
     <div className='flex flex-col items-center '>
   <Image src={pictureMe} className='size-[298px]' alt="picture of Ghamzah"/>
 <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
-  <div className="bg-green-500 size-2.5 rounded-full "></div>
+  <div className="bg-green-500 size-2.5 rounded-full relative z-10"></div>
+  <div className="bg-green-500 absolute size-2.5 rounded-full bg-green-500 opacity-75  animate-ping-large "></div>
   <div className='text-m font-medium'>Available for new projects</div>
   </div>
   <div className='sm:text-m'>
