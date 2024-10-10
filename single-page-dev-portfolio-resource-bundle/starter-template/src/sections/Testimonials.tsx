@@ -47,7 +47,7 @@ const testimonials = [
   {
     name: "Zukisa Eric Maza",
     position: "Colleague",
-    text: "Ghamzah, an Aspiring Software Developer, has shown remarkable dedication and hard work in his pursuit of a career in the tech industry. His journey began when he enrolled in a coding course at Life Choices Academy, where he honed his skills in modern web languages and developed future-oriented skills, such as data management and problem-solving. Ghamzah's strong work ethic and commitment to learning have allowed him to excel in his studies and gain valuable experience in the field.",
+    text: "Ghamzah, an Aspiring Software Developer, has shown remarkable dedication and hard work in his pursuit of a career in the tech industry. Ghamzah's strong work ethic and commitment to learning have allowed him to excel in his studies and gain valuable experience in the field.",
     avatar: Zukisa,
   },
 ];
@@ -59,8 +59,8 @@ export const TestimonialsSection = () => {
         <SectionHeader eyebrow="Testimonials" description="Don't just take my word for it see what people said about me." />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%)]
         py-4 -my-4">
-          <div className="flex gap-8 flex-none
-          animate-move-left [animation-duration:90s]">
+          <div className="flex gap-8 pr-8 flex-none
+          animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
             {[...new Array(2)].fill(0).map((_,index) =>(
               <Fragment key={index}>
                           {testimonials.map(testimonial => (
