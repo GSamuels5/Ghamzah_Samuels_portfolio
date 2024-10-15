@@ -29,7 +29,7 @@ export default function Home() {
 
    <ProjectsSection/>
    </div>
-   <div id="education">
+   <div id="education/experience">
 
 <EducationSection/>
 </div>
