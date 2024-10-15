@@ -1,3 +1,4 @@
+'use client';
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import StarIcon from '@/assets/icons/star.svg'
@@ -18,6 +19,7 @@ import MapImage from "@/assets/images/Screenshot 2024-09-16 155655.png";
 import SmileImoji from "@/assets/images/Screenshot_2024-09-16_155004-removebg-preview.png"
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
+import { motion } from "framer-motion";
 
 
 
@@ -130,8 +132,8 @@ description="Come and explore my journey"
 <Card className="h-[320px]  md:col-span-3 lg:col-span-2">
 <CardHeader title="My Tech Stack" 
 description="Explore my software for developing software" className=""/>
- <ToolboxItems items={toolboxItems} className="" />
- <ToolboxItems items={toolboxItems} className="mt-6" ItemsWrapperClassName="-translate-x-1/2" /> 
+ <ToolboxItems items={toolboxItems} className=" " ItemsWrapperClassName="animate-move-left [animation-duration:31s]" />
+ <ToolboxItems items={toolboxItems} className="mt-6" ItemsWrapperClassName="animate-move-right [animation-duration:25s]" /> 
  </Card>
  </div>
  <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5e gap-8">
@@ -144,24 +146,28 @@ className=""
  
   <div className="relative flex-1 ">
     {skills.map((skill) => (
-      <div key={skill.name} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 
+      
+      <motion.div key={skill.name} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 
       rounded-full py-1.5 absolute" style={{
         left:skill.left,
         top: skill.top,
-      }}>
+      }} drag>
         <span className="font-medium text-gray-950">{skill.name}</span>
         <span>{skill.emoji}</span>
-      </div>
+      </motion.div>
     ))}
   </div>
 </Card>
 <Card className="h-[320px]  relative  p-0 col-span-2">
+  
 <Image src={MapImage} alt="map" className="h-full w-full object-cover object-left-top" />
 <div className="absolute  top-1/2 left-1/2
- -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 
+ -translate-x-1/2 -translate-y-1/2 size-20 rounded-full 
   after:content-[''] after:absolute after:inset-0 after:outline after:outline-2
   after:-outline-offset-2 after:rounded-full
   after:outline-gray-950/30">
+     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animate-duration:31s]"></div>
+    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 "></div>
 <Image src={SmileImoji} alt="smilimg memoji" className="size-20"/>
 </div>
 </Card>
