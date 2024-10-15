@@ -1,4 +1,4 @@
-import { footer } from "framer-motion/client"
+// import { footer } from "framer-motion/client"
 import GithubIcon from '@/assets/icons/github.svg';
 import LinkedinIcon from '@/assets/linkedin-svgrepo-com.svg';
 import CodePenIcon from "@/assets/codepen-01-svgrepo-com.svg";
