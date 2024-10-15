@@ -1,4 +1,4 @@
-'use client';
+"use client"
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import StarIcon from '@/assets/icons/star.svg'
@@ -20,6 +20,7 @@ import SmileImoji from "@/assets/images/Screenshot_2024-09-16_155004-removebg-pr
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 
 
@@ -114,6 +115,7 @@ const skills = [
   },
 ]
 export const AboutSection = () => {
+  const constraintRef = useRef(null)
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -144,14 +146,16 @@ className=""
 />
  
  
-  <div className="relative flex-1 ">
+  <div className="relative flex-1" ref={constraintRef}>
     {skills.map((skill) => (
       
       <motion.div key={skill.name} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 
       rounded-full py-1.5 absolute" style={{
         left:skill.left,
         top: skill.top,
-      }} drag>
+      }} drag
+      dragConstraints={constraintRef}
+      >
         <span className="font-medium text-gray-950">{skill.name}</span>
         <span>{skill.emoji}</span>
       </motion.div>
