@@ -29,7 +29,10 @@ const config: Config = {
       animation: {
         'ping-large': "ping-large 1s ease-in-out infinite",
         "move-left": "move-left 1s linear infinite ",
-         "move-right": "move-right 1s linear infinite "
+         "move-right": "move-right 1s linear infinite ",
+         "zoom-in":"zoom-in 3s ease-in ",
+         "zoomInRight": "zoom-in-right 3s ease-out",
+         "zoomInLeft": "zoom-in-left 3s ease-out"
       },
       keyframes:{
         'ping-large':{
@@ -46,6 +49,33 @@ const config: Config = {
             transform: 'translateX(-50%)'
           }
         },
+        "zoom-in-right": {
+          "0%": {
+            transform: "scale3d(0.3, 0.3, 0.3) translate3d(-100%, 0, 0)",
+            opacity: '0',
+          },
+          "80%": {
+            opacity: '0.8',
+            transform: "scale3d(1.1, 1.1, 1.1)",
+          },
+          "100%": {
+            opacity: '1',
+            transform: "translate3d(0, 0%, 0)"
+          },
+        },
+        "zoom-in-left": {
+          "0%": {
+            opacity: '0',
+            transform: "scale3d(0.3, 0.3, 0.3) translate3d(100%, 0, 0)",
+          },
+          "80%": {
+            opacity: '0.8',
+            transform: "scale3d(1.1, 1.1, 1.1)",
+          },
+          "100%": {
+            opacity: '1',
+            transform: "translate3d(0, 0%, 0)"
+          },  },
         'move-right':{
           '0%':{
             transform: 'translateX(0%)'

@@ -126,14 +126,14 @@ description="Come and explore my journey"
 <div className="mt-20 flex flex-col gap-8">
 <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
 <Card className="h-[320px] md:col-span-2 lg:col-span-1"> 
- <CardHeader title="My Reads" description="See the books shaping my perspectives"/>
+ <CardHeader title="My Reads" description="See the book shaping my perspectives"/>
   <div className="w-40 mx-auto mt-2 md:mt-0">
 <Image src={bookImage} alt="book cover"/>
 </div>
 </Card>
 <Card className="h-[320px]  md:col-span-3 lg:col-span-2">
 <CardHeader title="My Tech Stack" 
-description="Explore my software for developing software" className=""/>
+description="Explore my tech stack for developing software" className=""/>
  <ToolboxItems items={toolboxItems} className=" " ItemsWrapperClassName="animate-move-left [animation-duration:31s]" />
  <ToolboxItems items={toolboxItems} className="mt-6" ItemsWrapperClassName="animate-move-right [animation-duration:25s]" /> 
  </Card>
@@ -141,7 +141,7 @@ description="Explore my software for developing software" className=""/>
  <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5e gap-8">
 <Card className="h-[320px] p-0 flex flex-col col-span-3">
 <CardHeader title="Soft Skills and Hobbies" 
-description="Explore my soft skill and hobbies beyond the coding environment"
+description="Explore my soft skills & hobbies beyond the coding. Drag it around for a better view"
 className=""
 />
  
