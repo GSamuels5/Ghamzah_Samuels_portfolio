@@ -1,3 +1,4 @@
+
 import pictureMe from '@/assets/images/20231009_110208-removebg-preview.png';
 import Image from "next/image";
 import ArrowDown from '@/assets/icons/arrow-down.svg';
@@ -63,13 +64,17 @@ export const HeroSection = () => {
  
     </div>
     <div className='flex flex-col items-center md:flex-row justify-center mt-8 gap-4'>
-    <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl '> 
-    <span className='font-semibold'>Learn more </span>
+    <button className='inline-flex 
+    z-50 relative
+    items-center gap-2 border border-white/15 px-6 h-12 rounded-xl '> 
+    <a href="#about" className='font-semibold'>Learn more </a>
     </button >
-    <button className='inline-flex items-center gap-2 border border-white  h-12 px-6 rounded-xl bg-dark-500'> 
-      <span><ArrowDown className="size-4"/>
+    <a href="https://drive.google.com/file/d/1xaPPEw1ccTa038d6pzZWcu04B9SpqjEP/view?usp=sharing" rel="noopener noreferrer" target="_blank"className='inline-flex items-center gap-2 border border-white  h-12 px-6 rounded-xl bg-dark-500 z-50 relative'
+    aria-label="Download my CV (opens in a new tab)">
+    <span><ArrowDown className="size-4" aria-hidden="true" />
         </span><span className='font-semibold'>Download my CV </span>
-    </button>
+    </a>
+
     </div>
 
 </div>
