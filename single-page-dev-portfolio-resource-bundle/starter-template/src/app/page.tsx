@@ -20,7 +20,6 @@ export default function Home() {
       <HeroSection/>
    </div>
  
-   <TapeSection/>
    <div id="about">
 
    <AboutSection/>
@@ -29,6 +28,7 @@ export default function Home() {
 
    <ProjectsSection/>
    </div>
+   <TapeSection/>
    <div id="education/experience">
 
 <EducationSection/>

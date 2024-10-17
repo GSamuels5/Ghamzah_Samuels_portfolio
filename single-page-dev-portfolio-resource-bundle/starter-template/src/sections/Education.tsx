@@ -15,9 +15,9 @@ export const EducationSection = () => {
                     <div className="  card md:border-r md:border-gray-200 md:pr-6 ">
                     <div className="group hover:animate-bounce [animation-duration:3s] flex">
                     <div className="description mx-3">
-                        <p>Institution</p>
-                        <p>Qualification</p> 
-                        <p>Duration</p> 
+                        <p>Institution:</p>
+                        <p>Qualification:</p> 
+                        <p>Duration:</p> 
                         </div>
                         <div className="detail">
 
@@ -33,9 +33,9 @@ export const EducationSection = () => {
                         <div className="group hover:animate-bounce [animation-duration:3s] flex">
 
                         <div className="description mx-3">
-                        <p>Institution</p>
-                        <p>Qualification</p> 
-                        <p>Duration</p> 
+                        <p>Institution:</p>
+                        <p>Qualification:</p> 
+                        <p>Duration:</p> 
                         </div>
                         <div className="detail">
 
@@ -49,9 +49,9 @@ export const EducationSection = () => {
                     <div className="card  ">
                      <div className="group hover:animate-bounce [animation-duration:3s] flex">
                         <div className="description mx-3">
-                        <p>Institution</p>
-                        <p>Qualification</p> 
-                        <p>Duration</p> 
+                        <p>Institution:</p>
+                        <p>Qualification:</p> 
+                        <p>Duration:</p> 
                         </div>
                         <div className="detail">
 
@@ -71,9 +71,9 @@ export const EducationSection = () => {
                     <div className="  card md:border-r md:border-gray-200 md:pr-6 ">
                     <div className="group hover:animate-bounce [animation-duration:3s] flex">
                     <div className="description mx-3">
-                        <p>Company</p>
-                        <p>Position</p> 
-                        <p>Duration</p> 
+                        <p>Company:</p>
+                        <p>Position:</p> 
+                        <p>Duration:</p> 
                         </div>
                         <div className="detail">
 
@@ -89,9 +89,9 @@ export const EducationSection = () => {
                         <div className="group hover:animate-bounce [animation-duration:3s] flex">
 
                         <div className="description mx-3">
-                        <p>Company</p>
-                        <p>Position</p> 
-                        <p>Duration</p> 
+                        <p>Company:</p>
+                        <p>Position:</p> 
+                        <p>Duration:</p> 
                         </div>
                         <div className="detail">
 
@@ -105,9 +105,9 @@ export const EducationSection = () => {
                     <div className="card  ">
                      <div className="group hover:animate-bounce [animation-duration:3s] flex">
                         <div className="description mx-3">
-                        <p>Company</p>
-                        <p>Position</p> 
-                        <p>Duration</p> 
+                        <p>Company:</p>
+                        <p>Position:</p> 
+                        <p>Duration:</p> 
                         </div>
                         <div className="detail">
 
