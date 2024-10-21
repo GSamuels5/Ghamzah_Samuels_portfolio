@@ -69,7 +69,7 @@ export const HeroSection = () => {
     items-center gap-2 border border-white/15 px-6 h-12 rounded-xl '> 
     <a href="#about" className='font-semibold'>Learn more </a>
     </button >
-    <a href="https://drive.google.com/file/d/1xaPPEw1ccTa038d6pzZWcu04B9SpqjEP/view?usp=sharing" rel="noopener noreferrer" target="_blank"className='inline-flex items-center gap-2 border border-white  h-12 px-6 rounded-xl bg-dark-500 z-50 relative'
+    <a href="https://drive.google.com/file/d/18BYObGUojW5ZTowYEEhlm641K5HHNilb/view?usp=sharing" rel="noopener noreferrer" target="_blank"className='inline-flex items-center gap-2 border border-white  h-12 px-6 rounded-xl bg-dark-500 z-50 relative'
     aria-label="Download my CV (opens in a new tab)">
     <span><ArrowDown className="size-4" aria-hidden="true" />
         </span><span className='font-semibold'>Download my CV </span>
