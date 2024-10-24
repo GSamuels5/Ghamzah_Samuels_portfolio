@@ -9,8 +9,8 @@ const calistoga = Calistoga({
   weight: ["400"]
 })
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Welcome to my Portfolio",
+  description: "This was my first React portfolio",
 };
 
 export default function RootLayout({
